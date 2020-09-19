@@ -12,3 +12,5 @@ python3 main.py
 ```
 
 You can delete LyX-ubuntu-installer after a successful installation.
+
+Tested on Ubuntu 20.04.
