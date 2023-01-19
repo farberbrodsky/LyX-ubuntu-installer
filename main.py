@@ -7,7 +7,7 @@ print("However, you can just read the source code, it's really simple.")
 # Make sure this is Ubuntu
 try:
     with open("/etc/os-release", "r") as release_file:
-        if not ('ID=ubuntu\n' in release_file.readlines()):
+        if not ('ID=ubuntu\n' in release_file.readlines()) and not ('ID=debian\n' in release_file.readlines()):
             sys.exit("This is not Ubuntu.")
 except:
     sys.exit("This is not Ubuntu.")
